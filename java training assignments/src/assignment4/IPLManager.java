@@ -24,7 +24,7 @@ public class IPLManager implements IPL {
         Teams t=teams.get(team.toUpperCase());
 
         if(t==null)
-            throw new TeamNotFoundException("Team does not exist");
+            throw new TeamNotFoundException("Team name does not exist");
 
         t.display();
     }
